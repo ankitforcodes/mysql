@@ -13,3 +13,5 @@ SHOW TABLES;
 a. SHOW COLUMNS FROM tablename;
 b. DESC tablename;
 
+4. Drop or delete a table
+DROP TABLE <tablename>;
