@@ -1,0 +1,5 @@
+1. Show databases: show databases;
+2. Create database: create database <name of DB>;
+3. Delete database: drop database <nae of DB>;
+4. Switch to a database or start using a database: USE <database name>;
+5. Show currently used database: SELECT database();
