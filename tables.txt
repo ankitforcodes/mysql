@@ -1,0 +1,15 @@
+1. Creating simple table (without any constrains):
+
+CREATE TABLE tablename
+  (
+    column_name data_type,
+    column_name data_type
+  );
+  
+2. List or show all the tables in a database:
+SHOW TABLES;
+
+3. Describe a table and see all the columns and constraints:
+a. SHOW COLUMNS FROM tablename;
+b. DESC tablename;
+
