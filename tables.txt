@@ -15,3 +15,10 @@ b. DESC tablename;
 
 4. Drop or delete a table
 DROP TABLE <tablename>;
+
+5. Create table with NOT NULL constraint:
+CREATE TABLE cats
+  (
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+  );
