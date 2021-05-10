@@ -1,0 +1,16 @@
+1. Insert 1 row in a table:
+	INSERT INTO table_name(column_name) VALUES (data);
+	INSERT INTO cats(name, age) VALUES ('Jetson', 7);
+  
+2. Insert multiple rows in a table:
+	INSERT INTO table_name 
+            (column_name, column_name) 
+	VALUES  (value, value), 
+            (value, value), 
+            (value, value);
+			
+			
+	INSERT INTO people(first_name, last_name, age)
+	VALUES('Linda', 'Belcher', 45)
+	  ,('Phillip', 'Frond', 38)
+	  ,('Calvin', 'Fischoeder', 70);
