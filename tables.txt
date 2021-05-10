@@ -22,3 +22,27 @@ CREATE TABLE cats
     name VARCHAR(100) NOT NULL,
     age INT NOT NULL
   );
+
+6. Create table wih default values:
+CREATE TABLE cats
+  (
+    name VARCHAR(20) DEFAULT 'no name provided',
+    age INT DEFAULT 99
+  );
+  
+7. Create table with Primary Key constraint:
+CREATE TABLE unique_cats
+  (
+    cat_id INT NOT NULL,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (cat_id)
+  );
+  
+8. Create table with Auto Increment constraint:
+CREATE TABLE unique_cats2 (
+    cat_id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (cat_id)
+);
