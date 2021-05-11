@@ -1,0 +1,16 @@
+1. Select all columns:
+	SELECT * FROM cats; 
+
+2. Select one column:
+	SELECT name FROM cats;
+
+3. Select multiple column:
+	SELECT name, age FROM cats;
+	
+4. WHERE clause (equality):
+	SELECT * FROM cats WHERE age=4;
+	SELECT * FROM cats WHERE name='Egg';
+	SELECT * FROM cats WHERE name='egG'; 
+	
+5. Using aliases for returned columns:
+	SELECT cat_id AS id, name FROM cats;
