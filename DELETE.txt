@@ -1,0 +1,6 @@
+1. Delete rows on condition:
+	DELETE FROM cats WHERE name='Egg';
+	
+2. Delete all rows from the table:
+	DELETE FROM cats;
+	
