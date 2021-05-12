@@ -13,3 +13,13 @@
 	
 4. Replace a string with another string:
 	SELECT REPLACE(title, 'e ', '3') FROM books;
+	
+5. Reverse column value:
+	SELECT REVERSE(author_fname) FROM books;
+	
+6. Find length of a string:
+	SELECT author_lname, CHAR_LENGTH(author_lname) AS 'length' FROM books;
+
+7. Change case of a string:
+	SELECT UPPER(title) FROM books;
+	SELECT LOWER(title) FROM books;
