@@ -1,0 +1,7 @@
+1. Count number of returned rows:
+	SELECT COUNT(*) FROM books;
+	SELECT COUNT(author_fname) FROM books;
+	
+2. Return unique rows:
+	SELECT COUNT(DISTINCT author_fname) FROM books;
+	ELECT COUNT(DISTINCT author_lname, author_fname) FROM books;
