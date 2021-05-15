@@ -28,4 +28,15 @@
 	GROUP BY author_lname,
 		 author_fname;
 
-5. 
+5. SUM:
+	SELECT author_fname,
+	       author_lname,
+	       Sum(pages)
+	FROM books
+	GROUP BY
+	    author_lname,
+	    author_fname;
+	    
+6. Average:
+	SELECT author_fname, author_lname, AVG(pages) FROM books
+	GROUP BY author_lname, author_fname;
