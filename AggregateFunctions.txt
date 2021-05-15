@@ -5,3 +5,11 @@
 2. Return unique rows:
 	SELECT COUNT(DISTINCT author_fname) FROM books;
 	ELECT COUNT(DISTINCT author_lname, author_fname) FROM books;
+
+3. GROUP BY:
+	SELECT author_fname, author_lname, COUNT(*) FROM books GROUP BY author_lname;
+	SELECT author_fname, author_lname, COUNT(*) FROM books GROUP BY author_lname, author_fname;
+
+4. MIN and MAX:
+	SELECT MIN(pages) FROM books;
+	SELECT MAX(pages) FROM books;
