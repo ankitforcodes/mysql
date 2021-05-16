@@ -1,0 +1,9 @@
+1. NOT EQUAL
+	SELECT title FROM books WHERE released_year != 2017;
+
+2. NOT LIKE:
+	SELECT title FROM books WHERE title NOT LIKE 'W%';
+	
+3. GREATER THAN:
+	SELECT title, released_year FROM books 
+	WHERE released_year >= 2000 ORDER BY released_year;
