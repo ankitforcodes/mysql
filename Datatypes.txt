@@ -13,10 +13,35 @@
 	- Y: no. of digits after the decimal
 	- CREATE TABLE items(price DECIMAL(5,2));
 	
-4. DATE, TIME, DATETIME:
+4. DATE CURDATE(), TIME CURTIME(), DATETIME NOW():
 	- CREATE TABLE people (name VARCHAR(100), birthdate DATE, birthtime TIME, birthdt DATETIME);
  
 	- INSERT INTO people (name, birthdate, birthtime, birthdt)
 	  VALUES('Padma', '1983-11-11', '10:07:35', '1983-11-11 10:07:35');
-	  
-	  
+	  	  
+5. DATE/TIME Formatting:
+	SELECT DATE_FORMAT(birthdt, '%m/%d/%Y') FROM people;
+	SELECT DATE_FORMAT(birthdt, '%m/%d/%Y at %h:%i') FROM people;
+	
+6. Math on DATE:
+	SELECT name, birthdate, DATEDIFF(NOW(), birthdate) FROM people;
+	SELECT birthdt, DATE_ADD(birthdt, INTERVAL 3 QUARTER) FROM people;
+	SELECT birthdt, birthdt + INTERVAL 15 MONTH + INTERVAL 10 HOUR FROM people;
+	
+7. TIMESTAMPS:
+	CREATE TABLE comments (
+	    content VARCHAR(100),
+	    created_at TIMESTAMP DEFAULT NOW()
+	);
+	
+	
+	CREATE TABLE comments2 (
+	    content VARCHAR(100),
+	    changed_at TIMESTAMP DEFAULT NOW() ON UPDATE CURRENT_TIMESTAMP
+	);
+	
+	
+	CREATE TABLE comments2 (
+	    content VARCHAR(100),
+	    changed_at TIMESTAMP DEFAULT NOW() ON UPDATE NOW()
+	);
