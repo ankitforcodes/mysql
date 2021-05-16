@@ -1,0 +1,22 @@
+1. CHAR
+	- Fixed length strings
+	- smaller strigns will get right-padded with spaces
+	- extra characters will get truncated
+	
+2. VARCHAR
+	- variable length strings
+	- no padding
+	- extra characters get truncated
+	
+3. DECIMAL (X,Y)
+	- X: total number of digits (both before and after the decimal)
+	- Y: no. of digits after the decimal
+	- CREATE TABLE items(price DECIMAL(5,2));
+	
+4. DATE, TIME, DATETIME:
+	- CREATE TABLE people (name VARCHAR(100), birthdate DATE, birthtime TIME, birthdt DATETIME);
+ 
+	- INSERT INTO people (name, birthdate, birthtime, birthdt)
+	  VALUES('Padma', '1983-11-11', '10:07:35', '1983-11-11 10:07:35');
+	  
+	  
