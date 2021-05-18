@@ -19,3 +19,8 @@
 	SELECT * FROM customers
 	JOIN orders
 		ON customers.id = orders.customer_id;
+
+3. LEFT JOIN:
+	SELECT * FROM customers
+	LEFT JOIN orders
+	    ON customers.id = orders.customer_id;
