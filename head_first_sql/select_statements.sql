@@ -10,3 +10,8 @@ select first_name from my_contact where first_name like "%m";
 select first_name from my_contact where first_name like "__m";
 
 -- above Query will result is "Tim", "Jim"
+
+
+-- Match against a list of items
+SELECT food_item where ingredients IN ('egg', 'chicken', 'salmon', 'meat');
+SELECT food_item where ingredients NOT IN ('egg', 'chicken', 'salmon', 'meat');
